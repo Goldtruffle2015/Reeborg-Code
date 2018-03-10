@@ -17,9 +17,13 @@ finishline = 0
 # CODE STARTS HERE
 while finishline == 0 or finishline == 1:
     if at_goal():
+        finishline += 1
+        if finishline > 1:
+            done()
+        else:
+            pass
         turn_around()
         move()
-        finishline += 1
     else:
         pass
     while object_here():
