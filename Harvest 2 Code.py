@@ -12,7 +12,7 @@ def turn_right():
 # --- Variables ---#
 carrotNum = 0
 # --- Code Starts Here ---#
-while carrotNum < 1 or not carrots_in_column == 0:
+while carrotNum == 0 or not carrots_in_column == 0:
     #Get to standard orientation
     if is_facing_north():
         if front_is_clear():
