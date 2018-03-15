@@ -19,8 +19,8 @@ def go_to_next_placeholder():
     build_wall()
 # --- Code Starts Here --- #
 move()
-# Short for Digit 1 in Number 1
 # Step 1: Count D1N1
+# Short for Digit 1 in Number 1
 D1N1 = 0
 while object_here():
     take()
