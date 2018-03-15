@@ -19,7 +19,7 @@ def go_to_next_placeholder():
     build_wall()
 # --- Code Starts Here --- #
 move()
-# Step 1: Count D1N1
+# Step 1.00: Count D1N1
 # Short for Digit 1 in Number 1
 D1N1 = 0
 while object_here():
@@ -29,8 +29,10 @@ for i in range(D1N1):
     put()
 turn_right()
 move()
-# Step 2: Count D2N1
+# Step 1.25: Count D2N1
 # D2N1 is short for Digit 2 in Number 1
+# Decimal is due to this step being an 
+# iteration of step 1.00
 D2N1 = 0
 while object_here():
     take()
@@ -41,7 +43,7 @@ turn_around()
 move()
 turn_right()
 move()
-# Step 3: Count D1N2
+# Step 1.50: Count D1N2
 # D1N2 is short for Digit 1 in Number 2
 D1N2 = 0
 while object_here():
@@ -51,7 +53,7 @@ for i in range(D1N2):
     put()
 turn_right()
 move()
-# Step 4: Count D2N2
+# Step 1.75: Count D2N2
 # D2N2 is short for Digit 2 in Number 2
 D2N2 = 0
 while object_here():
@@ -65,19 +67,19 @@ turn_right()
 move()
 turn_around()
 build_wall()
-# Step 5: Calculate the total
+# Step 2: Calculate the total
 Num1 = (10 * D2N1) + D1N1
 Num2 = (10 * D2N2) + D1N2
 '''
-Insert Operation Below
+Insert Operation Below ( "+" , "-" , "*" )
 '''
-Total = Num1 + Num2
-# Step 6: Write out Digit1
+Total = Num1 * Num2
+# Step 3.00: Write out Digit1
 # Digit1 stands for digit in the ones place
 Digit1 = Total%10
 for i in range(Digit1):
     put()
-# Step 7: Write out Digit2
+# Step 3.25: Write out Digit2
 # Digit2 stands for digit in the tens place
 go_to_next_placeholder()
 Pseudo_Digit2 = Total%100
@@ -91,7 +93,7 @@ else:
     pass
 for i in range(Digit2):
     put()
-# Step 8: Write out Digit3
+# Step 3.50: Write out Digit3
 # Digit3 stands for digit in the hundreds place
 go_to_next_placeholder()
 Pseudo_Digit3 = Total%1000
@@ -105,7 +107,7 @@ else:
     pass
 for i in range(Digit3):
     put()
-# Step 9: Write out Digit4
+# Step 3.75: Write out Digit4
 # Digit4 stands for digit in the thousands place
 go_to_next_placeholder()
 Pseudo_Digit4 = Total%10000
@@ -119,7 +121,7 @@ else:
     pass
 for i in range(Digit4):
     put()
-# Step 10: Move out of the way
+# Step 4: Move out of the way
 turn_left()
 move()
 done()
