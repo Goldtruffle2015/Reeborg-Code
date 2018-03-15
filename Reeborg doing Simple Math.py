@@ -71,7 +71,7 @@ Num2 = (10 * D2N2) + D1N2
 '''
 Insert Operation Below
 '''
-Total = Num1 + Num2
+Total = Num1 - Num2
 # Step 6: Write out Digit1
 # Digit1 stands for digit in the ones place
 Digit1 = Total%10
@@ -122,3 +122,4 @@ for i in range(Digit4):
 # Step 10: Move out of the way
 turn_left()
 move()
+done()
